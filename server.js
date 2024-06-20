@@ -25,7 +25,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send(database.users);
+  res.send("database.users, it's working!");
 });
 
 app.post("/signin", (req, res) => {
@@ -61,5 +61,5 @@ app.post("/imageurl", (req, res) => {
 // });
 
 app.listen(port, () => {
-  console.log("app is running on port 3000");
+  console.log("app is running on port 8000");
 });
